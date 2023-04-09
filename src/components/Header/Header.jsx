@@ -10,7 +10,7 @@ const Header = () => {
                 <a>Applied Jobs</a>
                 <a>Blog</a>
             </nav>
-            <button>Start Applying</button>
+            <button className='primary-btn'>Start Applying</button>
         </div>
     );
 };
