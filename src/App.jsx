@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header/Header'
 import HomeBanner from './components/HomeBanner/HomeBanner'
+import CategoryList from './components/CategoryList/CategoryList'
+import FeaturedJob from './components/FeaturedJob/FeaturedJob'
 
 
 function App() {
@@ -11,6 +13,8 @@ function App() {
     <div className="App">
       <Header></Header>
       <HomeBanner></HomeBanner>
+      <CategoryList></CategoryList>
+      <FeaturedJob></FeaturedJob>
     </div>
   )
 }
