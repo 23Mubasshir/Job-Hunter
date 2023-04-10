@@ -5,7 +5,6 @@ import './FeaturedJobCarts.css'
 
 
 const FeaturedJobCarts = ({job}) => {
-  console.log({job});
   const {
     company_logo,
     company_name,

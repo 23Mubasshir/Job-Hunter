@@ -10,12 +10,19 @@ const Home = () => {
   {
     /* --------Featured Jobs------ */
   }
-  const featuredJobsData = useLoaderData().slice(0,4);
+
+  const featuredJobsData = useLoaderData().slice(0, 4);
+  const featuredJobsData2 = useLoaderData();
+  const [fourCarts, setFourCarts] = useState(featuredJobsData);
+  const allCarts = () => {
+    setFourCarts(featuredJobsData2);
+  };
+
   {
     /* --------Job Category List------ */
   }
-  const [category, setCategory] = useState([]);
 
+  const [category, setCategory] = useState([]);
   useEffect(() => {
     fetch("CategoryList.json")
       .then((res) => res.json())
@@ -51,13 +58,14 @@ const Home = () => {
           </p>
         </div>
         <div className="job-row">
-          {featuredJobsData.map((job, idk) => (
-            <FeaturedJobCarts key={idk}
-            job={job}></FeaturedJobCarts>
+          {fourCarts.map((job, idk) => (
+            <FeaturedJobCarts key={idk} job={job}></FeaturedJobCarts>
           ))}
         </div>
         <div className="all-jobs-button1">
-        <button className="all-jobs-button">See All Jobs</button>
+          <button onClick={allCarts} className="all-jobs-button">
+            See All Jobs
+          </button>
         </div>
       </div>
     </>
