@@ -10,8 +10,7 @@ const Home = () => {
   {
     /* --------Featured Jobs------ */
   }
-  const featuredJobsData = useLoaderData();
-
+  const featuredJobsData = useLoaderData().slice(0,4);
   {
     /* --------Job Category List------ */
   }
@@ -56,6 +55,9 @@ const Home = () => {
             <FeaturedJobCarts key={idk}
             job={job}></FeaturedJobCarts>
           ))}
+        </div>
+        <div className="all-jobs-button1">
+        <button className="all-jobs-button">See All Jobs</button>
         </div>
       </div>
     </>

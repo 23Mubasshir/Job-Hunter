@@ -1,4 +1,8 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLocationDot, faCircleDollarToSlot } from '@fortawesome/free-solid-svg-icons'
+import './FeaturedJobCarts.css'
+
 
 const FeaturedJobCarts = ({job}) => {
   console.log({job});
@@ -16,13 +20,13 @@ const FeaturedJobCarts = ({job}) => {
       <img src={company_logo} alt="" />
       <h3>{job_title}</h3>
       <p>{company_name}</p>
-      <div>
+      <div className="col-1">
         <p>{remote_or_onsite}</p>
         <p>{fulltime_or_parttime}</p>
       </div>
-      <div>
-        <p>{location}</p>
-        <p>{salary}</p>
+      <div className="col-2">
+        <p><FontAwesomeIcon icon={faLocationDot} /> {location}</p>
+        <p><FontAwesomeIcon icon={faCircleDollarToSlot} /> Salary: {salary}</p>
       </div>
       <button className="primary-btn">View Details</button>
     </div>
