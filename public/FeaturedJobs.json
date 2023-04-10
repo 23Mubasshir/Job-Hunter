@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "company_logo": "../src/assets/All Images/upwork.png",
+      "job_title": "Software Engineer",
+      "company_name": "Upwork Inc.",
+      "remote_or_onsite": "Remote",
+      "location": "Anywhere",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$100,000 - $150,000",
+      "job_description": "We're looking for a software engineer to help us build amazing products.",
+      "job_responsibility": "Develop and maintain software applications, troubleshoot issues, and work collaboratively with other team members.",
+      "educational_requirements": "Bachelor's degree in Computer Science or related field.",
+      "experiences": "3+ years of experience as a software engineer.",
+      "contact_information": {
+        "phone": "555-555-5555",
+        "email": "jobs@abcinc.com"
+      }
+    },
+    {
+      "id": 2,
+      "company_logo": "../src/assets/All Images/tesla-9 1.png",
+      "job_title": "Product Manager",
+      "company_name": "Tesla Corp.",
+      "remote_or_onsite": "Onsite",
+      "location": "San Francisco, CA",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$120,000 - $180,000",
+      "job_description": "We're seeking an experienced product manager to lead our team.",
+      "job_responsibility": "Define and prioritize product features, work with design and engineering teams, and communicate with stakeholders.",
+      "educational_requirements": "Bachelor's degree in a relevant field.",
+      "experiences": "5+ years of experience in product management.",
+      "contact_information": {
+        "phone": "555-555-5555",
+        "email": "jobs@xyzcorp.com"
+      }
+    },
+    {
+      "id": 3,
+      "company_logo": "../src/assets/All Images/Group 10021.png",
+      "job_title": "Marketing Manager",
+      "company_name": "Airbnb Corp.",
+      "remote_or_onsite": "Remote",
+      "location": "Anywhere",
+      "fulltime_or_parttime": "Full-time",
+      "salary": "$90,000 - $120,000",
+      "job_description": "We're looking for a marketing manager to help us reach new audiences.",
+      "job_responsibility": "Develop and execute marketing campaigns, manage social media channels, and analyze marketing data.",
+      "educational_requirements": "Bachelor's degree in Marketing or related field.",
+      "experiences": "3+ years of experience in marketing.",
+      "contact_information": {
+        "phone": "555-555-5555",
+        "email": "jobs@acmecorp.com"
+      }
+    },
+    {
+      "id": 4,
+      "company_logo": "../src/assets/All Images/netflix-4 1.png",
+      "job_title": "Graphic Designer",
+      "company_name": "Netflix Industries",
+      "remote_or_onsite": "Onsite",
+      "location": "New York, NY",
+      "fulltime_or_parttime": "Part-time",
+      "salary": "$40 - $50 per hour",
+      "job_description": "We're looking for a talented graphic designer to create stunning visual designs.",
+      "job_responsibility": "Create graphics and visual designs for marketing campaigns and product launches.",
+      "educational_requirements": "Bachelor's degree in Graphic Design or related field.",
+      "experiences": "2+ years of experience as a graphic designer.",
+      "contact_information": {
+        "phone": "555-555-5555",
+        "email": "jobs@acmecorp.com"
+      }
+    },
+    {
+        "id": 5,
+        "company_logo": "../src/assets/All Images/coca-cola.png",
+        "job_title": "Data Analyst",
+        "company_name": "Coca-cola Co.",
+        "remote_or_onsite": "Onsite",
+        "location": "Boston, MA",
+        "fulltime_or_parttime": "Full-time",
+        "salary": "$70,000 - $90,000",
+        "job_description": "We're seeking a data analyst to help us make data-driven decisions.",
+        "job_responsibility": "Analyze data, create visualizations and reports, and work with stakeholders to communicate insights.",
+        "educational_requirements": "Bachelor's degree in Statistics, Mathematics, or related field.",
+        "experiences": "2+ years of experience as a data analyst.",
+        "contact_information": {
+          "phone": "555-555-5555",
+          "email": "jobs@dataco.com"
+        }
+      },
+      {
+        "id": 6,
+        "company_logo": "../src/assets/All Images/google-1-1 1.png",
+        "job_title": "Customer Support Specialist",
+        "company_name": "Google",
+        "remote_or_onsite": "Remote",
+        "location": "Anywhere",
+        "fulltime_or_parttime": "Part-time",
+        "salary": "$100 - $125 per hour",
+        "job_description": "We're looking for a customer support specialist to provide excellent support to our customers.",
+        "job_responsibility": "Answer customer inquiries via email and phone, troubleshoot issues, and work collaboratively with other team members.",
+        "educational_requirements": "No specific educational requirements.",
+        "experiences": "1+ years of experience in customer support.",
+        "contact_information": {
+          "phone": "555-555-5555",
+          "email": "jobs@supportinc.com"
+        }
+      }
+    ]
+    
+
+  

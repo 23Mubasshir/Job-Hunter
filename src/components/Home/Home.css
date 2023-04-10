@@ -1,0 +1,23 @@
+.category-list {
+  padding: 130px 0 0px 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.category-list-header {
+  text-align: center;
+}
+.category-list-header h1 {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.category-list-header p {
+  color: #757575;
+}
+.category-job-cart {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: center;
+}
+.job-row {
+  display: flex;
+}

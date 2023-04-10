@@ -17,7 +17,9 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     // loader: productsAndCartData,
     children: [
-      { path: '/', element: <Home /> },
+      { path: '/', 
+      element: <Home />,
+      loader: () =>fetch('FeaturedJobs.json') },
       { path: '/applied-jobs', element: <AppliedJobs/> },
       { path: '/blog', element: <Blog /> },
       { path: '/statistics', element: <Statistics/> }
