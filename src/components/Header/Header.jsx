@@ -1,14 +1,16 @@
 import React from 'react';
 import './Header.css'
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className='header'>
             <h1>Job Hunter</h1>
             <nav>
-                <a>Statistics</a>
-                <a>Applied Jobs</a>
-                <a>Blog</a>
+                <Link to="/">Home</Link>
+                <Link to="/statistics">Statistics</Link>
+                <Link to="/applied-jobs">Applied Jobs</Link>
+                <Link to="/blog">Blog</Link>
             </nav>
             <button className='primary-btn'>Start Applying</button>
         </div>

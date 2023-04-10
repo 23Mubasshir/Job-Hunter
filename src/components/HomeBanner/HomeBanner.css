@@ -15,6 +15,7 @@
 .banner-text h1 {
   font-weight: 800;
   font-size: 80px;
+  line-height: 1.2;
 }
 .coloured-text {
   background: linear-gradient(90deg, #7e90fe 0%, #9873ff 100%);
