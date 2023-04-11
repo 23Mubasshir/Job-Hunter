@@ -40,3 +40,6 @@ border-style: groove;
 .col-2{
   display: flex;
 }
+.primary-btn{
+  color: aliceblue;
+}
