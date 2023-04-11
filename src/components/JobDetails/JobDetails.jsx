@@ -1,12 +1,22 @@
 import React, { useEffect, useState } from "react";
 import "./JobDetails.css";
-import { Link, useLoaderData, useParams } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faCircleDollarToSlot, faCalendar, faCalendarCheck, faPhone, faVoicemail, faMailBulk, faMailForward, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { Link, json, useLoaderData, useParams } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faLocationDot,
+  faCircleDollarToSlot,
+  faCalendar,
+  faCalendarCheck,
+  faPhone,
+  faVoicemail,
+  faMailBulk,
+  faMailForward,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
+import { addToDb } from "../../utils/fakeDB";
 
 const JobDetails = () => {
   const JobDetailsId = useParams();
-
   const [job, setJob] = useState([]);
 
   useEffect(() => {
@@ -19,6 +29,7 @@ const JobDetails = () => {
   }, []);
 
   const {
+    id,
     job_description,
     job_responsibility,
     educational_requirements,
@@ -27,8 +38,13 @@ const JobDetails = () => {
     job_title,
     location,
     phone,
-    email
+    email,
   } = job;
+
+  const handleAddToCart = (id) => {
+    console.log(id);
+    addToDb(id);
+  };
 
   return (
     <div>
@@ -37,30 +53,64 @@ const JobDetails = () => {
       </div>
 
       <div className="full-job-details">
-
         <div className="Job-details-text">
-          <p><span className="bold-title">Job Description : </span>{job_description}</p>
-          <p><span className="bold-title">Job Responsibility : </span>{job_responsibility}</p>
-          <p><span className="bold-title">Educational Requirements : </span>{educational_requirements}</p>
-          <p><span className="bold-title">Experiences : </span>
-          {experiences}</p>
+          <p>
+            <span className="bold-title">Job Description : </span>
+            {job_description}
+          </p>
+          <p>
+            <span className="bold-title">Job Responsibility : </span>
+            {job_responsibility}
+          </p>
+          <p>
+            <span className="bold-title">Educational Requirements : </span>
+            {educational_requirements}
+          </p>
+          <p>
+            <span className="bold-title">Experiences : </span>
+            {experiences}
+          </p>
         </div>
 
         <div className="Job-details-cart">
           <div className="job-details-cart-color">
-          <h3>Job Details</h3>
-          <p><span className="bold-title"><FontAwesomeIcon icon={faCircleDollarToSlot} /> Salary: </span>{salary}</p>
-          <p><span className="bold-title"><FontAwesomeIcon icon={faCalendarCheck} /> Job Title : </span>{job_title}</p>
-          <h3>Contact Information</h3>
-          <p><span className="bold-title"><FontAwesomeIcon icon={faPhone} /> Phone : </span>{phone}</p>
-          <p><span className="bold-title"><FontAwesomeIcon icon={faEnvelope}/> Email : </span>{email}</p>
-          <p><span className="bold-title"><FontAwesomeIcon icon={faLocationDot} /> Address : </span>{location}</p>
+            <h3>Job Details</h3>
+            <p>
+              <span className="bold-title">
+                <FontAwesomeIcon icon={faCircleDollarToSlot} /> Salary:{" "}
+              </span>
+              {salary}
+            </p>
+            <p>
+              <span className="bold-title">
+                <FontAwesomeIcon icon={faCalendarCheck} /> Job Title :{" "}
+              </span>
+              {job_title}
+            </p>
+            <h3>Contact Information</h3>
+            <p>
+              <span className="bold-title">
+                <FontAwesomeIcon icon={faPhone} /> Phone :{" "}
+              </span>
+              {phone}
+            </p>
+            <p>
+              <span className="bold-title">
+                <FontAwesomeIcon icon={faEnvelope} /> Email :{" "}
+              </span>
+              {email}
+            </p>
+            <p>
+              <span className="bold-title">
+                <FontAwesomeIcon icon={faLocationDot} /> Address :{" "}
+              </span>
+              {location}
+            </p>
           </div>
-          <button className="primary-btn">
-            <Link to="/applied-jobs">Apply Now</Link>
+          <button onClick={() => handleAddToCart(id)} className="primary-btn">
+            Apply Now
           </button>
         </div>
-
       </div>
     </div>
   );
