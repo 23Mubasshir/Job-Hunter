@@ -40,6 +40,9 @@ border-style: groove;
 .col-2{
   display: flex;
 }
-.primary-btn{
-  color: aliceblue;
+.primary-btn a{
+  text-decoration: none;
+}
+a{
+  all: unset;
 }
