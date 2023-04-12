@@ -1,3 +1,13 @@
 .single-card{
     margin: 225px 300px 300px 300px;
   }
+  .btn-filter{
+    font-weight: 500;
+    font-size: 20px;
+    color: #727272;
+    padding: 19px 28px;
+    background: #F4F4F4;
+    border-radius: 8px;
+    border: #7e90fe;
+    margin-bottom: 30px;
+  } 

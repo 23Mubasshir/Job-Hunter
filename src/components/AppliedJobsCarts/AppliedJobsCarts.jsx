@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faLocationDot, faCircleDollarToSlot } from '@fortawesome/free-solid-svg-icons'
+import { faLocationDot, faCircleDollarToSlot, faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import './AppliedJobsCarts.css'
 import { Link } from "react-router-dom";
 
@@ -17,6 +17,8 @@ const AppliedJobsCarts = ({job}) => {
         salary,
       } = job;
       return (
+        <div>
+          
         <div className="full-job-cart">
 
           <div className="img-div">
@@ -39,6 +41,7 @@ const AppliedJobsCarts = ({job}) => {
           <div className="btn-div">
           <button className="primary-btn"><Link to={`/job/${id}`}>View Details</Link></button>
           </div>
+        </div>
         </div>
       );
     };
