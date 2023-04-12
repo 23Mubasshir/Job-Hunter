@@ -1,0 +1,11 @@
+.chart1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Statistics h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
