@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "company_logo": "../src/assets/All Images/upwork.png",
+    "company_logo": "https://i.ibb.co/xYs7vmm/upwork.png",
     "job_title": "Software Engineer",
     "company_name": "Upwork Inc.",
     "remote_or_onsite": "Remote",
@@ -17,7 +17,7 @@
   },
   {
     "id": 2,
-    "company_logo": "../src/assets/All Images/tesla-9 1.png",
+    "company_logo": "https://i.ibb.co/N3xQYCn/upwork.png",
     "job_title": "Product Manager",
     "company_name": "Tesla Corp.",
     "remote_or_onsite": "Onsite",
@@ -33,7 +33,7 @@
   },
   {
     "id": 3,
-    "company_logo": "../src/assets/All Images/Group 10021.png",
+    "company_logo": "https://i.ibb.co/C0GQ9Gm/Group-10021.png",
     "job_title": "Marketing Manager",
     "company_name": "Airbnb Corp.",
     "remote_or_onsite": "Remote",
@@ -49,7 +49,7 @@
   },
   {
     "id": 4,
-    "company_logo": "../src/assets/All Images/netflix-4 1.png",
+    "company_logo": "https://i.ibb.co/bR5W3qp/netflix-4-1.png",
     "job_title": "Graphic Designer",
     "company_name": "Netflix Industries",
     "remote_or_onsite": "Onsite",
@@ -65,7 +65,7 @@
   },
   {
     "id": 5,
-    "company_logo": "../src/assets/All Images/coca-cola.png",
+    "company_logo": "https://i.ibb.co/rwgJ7ZJ/coca-cola.png",
     "job_title": "Data Analyst",
     "company_name": "Coca-cola Co.",
     "remote_or_onsite": "Onsite",
@@ -81,7 +81,7 @@
   },
   {
     "id": 6,
-    "company_logo": "../src/assets/All Images/google-1-1 1.png",
+    "company_logo": "https://i.ibb.co/zHmHR8n/google-1-1-1.png",
     "job_title": "Customer Support Specialist",
     "company_name": "Google",
     "remote_or_onsite": "Remote",

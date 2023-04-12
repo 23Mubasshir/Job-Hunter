@@ -32,9 +32,12 @@ const router = createBrowserRouter([
         element: <Blog /> },
       { path: "/statistics", 
         element: <Statistics /> 
-      },
+      }
     ],
   },
+  { path: "/*", 
+    element: <ErrorPage /> 
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

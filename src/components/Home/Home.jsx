@@ -24,7 +24,7 @@ const Home = () => {
 
   const [category, setCategory] = useState([]);
   useEffect(() => {
-    fetch("CategoryList.json")
+    fetch("/CategoryList.json")
       .then((res) => res.json())
       .then((data) => setCategory(data));
   }, []);
