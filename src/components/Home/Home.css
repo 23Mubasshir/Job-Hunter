@@ -42,3 +42,24 @@
   margin-bottom: 40px;
 }
 
+
+@media all and (max-width: 576px) {
+  .category-job-cart {
+    display: block;
+    justify-content: center;
+  }
+  .category-list {
+    padding: 30px;
+  }
+  .category-list-header {
+    text-align: center;
+    margin-top: 200px;
+  }
+  .job-row {
+    display: block;
+    gap: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}

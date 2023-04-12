@@ -46,3 +46,10 @@ border-style: groove;
 a{
   all: unset;
 }
+
+
+@media all and (max-width: 576px) {
+  .job-column {
+    margin-bottom: 30px;
+  }
+}

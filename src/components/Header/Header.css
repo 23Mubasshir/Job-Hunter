@@ -41,3 +41,28 @@
   border-radius: 8px;
   border: #7e90fe;
 }
+
+
+
+@media all and (max-width: 576px) {
+  .header {
+    background: linear-gradient(
+      90deg,
+      rgba(126, 144, 254, 0.05) 0%,
+      rgba(152, 115, 255, 0.05) 100%
+    );
+    padding: 30px;
+    display:block;
+  }
+  .header h1 {
+    text-align: center;
+  }
+  .header nav {
+    text-align: center;
+  }
+  .btn-home{
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
